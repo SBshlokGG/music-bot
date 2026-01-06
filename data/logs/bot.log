@@ -1,0 +1,265 @@
+2026-01-05 22:53:19 | INFO     | 🚀 Starting Shlok Music Bot...
+2026-01-05 22:53:19 | INFO     | 🚀 Starting bot (attempt 1/10)...
+2026-01-05 22:53:19 | INFO     | logging in using static token
+2026-01-05 22:53:20 | INFO     | 🔧 Setting up Shlok Music Bot...
+2026-01-05 22:53:20 | INFO     | ✅ Music cog loaded
+2026-01-05 22:53:20 | INFO     | ✅ Loaded: cogs.music_simple
+2026-01-05 22:53:20 | INFO     | ✅ Utility cog loaded
+2026-01-05 22:53:20 | INFO     | ✅ Loaded: cogs.utility_new
+2026-01-05 22:53:27 | INFO     | 127.0.0.1 [05/Jan/2026:22:53:27 +0530] "GET / HTTP/1.1" 200 1100 "-" "curl/8.7.1"
+2026-01-05 22:53:27 | INFO     | 127.0.0.1 [05/Jan/2026:22:53:27 +0530] "GET /health HTTP/1.1" 200 244 "-" "curl/8.7.1"
+2026-01-05 22:53:55 | INFO     | ✅ Synced 21 slash commands globally
+2026-01-05 22:53:57 | INFO     | Shard ID None has connected to Gateway (Session ID: 9a2a7e98dac66dec8aef9bba97d0a23c).
+2026-01-05 22:53:59 | INFO     | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-01-05 22:53:59 | INFO     | 🎵 Shlok Music is online!
+2026-01-05 22:53:59 | INFO     | 📊 Servers: 5
+2026-01-05 22:53:59 | INFO     | 👥 Users: 108
+2026-01-05 22:53:59 | INFO     | 🤖 Shlok's Music Bot#5200 (ID: 1097878151713017896)
+2026-01-05 22:53:59 | INFO     | 📡 Latency: 328ms
+2026-01-05 22:53:59 | INFO     | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-01-05 22:55:21 | INFO     | 127.0.0.1 [05/Jan/2026:22:55:21 +0530] "HEAD / HTTP/1.1" 200 153 "https://overfrugally-wholehearted-olin.ngrok-free.dev/" "Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)"
+2026-01-05 22:55:21 | INFO     | 127.0.0.1 [05/Jan/2026:22:55:21 +0530] "HEAD /health HTTP/1.1" 200 159 "https://overfrugally-wholehearted-olin.ngrok-free.dev/health" "Mozilla/5.0+(compatible; UptimeRobot/2.0; http://www.uptimerobot.com/)"
+2026-01-05 22:56:30 | INFO     | Connecting to voice...
+2026-01-05 22:56:30 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:56:31 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:56:31 | INFO     | Voice connection complete.
+2026-01-05 22:56:33 | ERROR    | Disconnected from voice... Reconnecting in 0.56s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:56:33 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:56:33 | INFO     | Connecting to voice...
+2026-01-05 22:56:33 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:56:34 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:56:34 | INFO     | Voice connection complete.
+2026-01-05 22:56:35 | ERROR    | Disconnected from voice... Reconnecting in 0.85s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:56:36 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:56:36 | INFO     | Connecting to voice...
+2026-01-05 22:56:36 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:56:36 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:56:36 | ERROR    | Not connected to voice
+2026-01-05 22:56:36 | INFO     | Voice connection complete.
+2026-01-05 22:56:40 | ERROR    | Disconnected from voice... Reconnecting in 4.78s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:56:45 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:56:45 | INFO     | Connecting to voice...
+2026-01-05 22:56:45 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:56:45 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:56:46 | INFO     | Voice connection complete.
+2026-01-05 22:56:49 | ERROR    | Disconnected from voice... Reconnecting in 15.75s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:57:04 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:57:04 | INFO     | Connecting to voice...
+2026-01-05 22:57:04 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:57:05 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:57:05 | INFO     | Voice connection complete.
+2026-01-05 22:57:10 | ERROR    | Disconnected from voice... Reconnecting in 19.53s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:57:29 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:57:29 | INFO     | Connecting to voice...
+2026-01-05 22:57:29 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:57:30 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:57:30 | INFO     | Voice connection complete.
+2026-01-05 22:57:58 | ERROR    | Disconnected from voice... Reconnecting in 57.36s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 22:58:35 | INFO     | ffmpeg process 21977 has not terminated. Waiting to terminate...
+2026-01-05 22:58:35 | INFO     | ffmpeg process 21977 should have terminated with a return code of -9.
+2026-01-05 22:58:56 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 22:58:56 | INFO     | Connecting to voice...
+2026-01-05 22:58:56 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 22:58:56 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457787963697135687/reactions/%E2%8F%AD%EF%B8%8F/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 22:58:56 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 22:58:56 | INFO     | Voice connection complete.
+2026-01-05 22:58:58 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457787963697135687/reactions/%E2%8F%B9%EF%B8%8F/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 22:58:59 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457787963697135687/reactions/%F0%9F%94%89/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 22:59:00 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457787963697135687/reactions/%F0%9F%94%89/@me responded with 429. Retrying in 0.30 seconds.
+[tls @ 0x93ac029e0] Error in the pull function.
+[tls @ 0x93ac029e0] IO error: Connection reset by peer
+[https @ 0x93ac54a00] Will reconnect at 1212416 in 0 second(s), error=Connection reset by peer.
+2026-01-05 23:00:10 | INFO     | ffmpeg process 21979 has not terminated. Waiting to terminate...
+2026-01-05 23:00:10 | INFO     | ffmpeg process 21979 should have terminated with a return code of -9.
+2026-01-05 23:00:28 | INFO     | ffmpeg process 21984 has not terminated. Waiting to terminate...
+2026-01-05 23:00:28 | INFO     | ffmpeg process 21984 should have terminated with a return code of -9.
+2026-01-05 23:00:45 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457788424026194120/reactions/%E2%8F%AF%EF%B8%8F/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:00:46 | ERROR    | Disconnected from voice... Reconnecting in 53.46s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-01-05 23:00:47 | INFO     | ffmpeg process 21986 has not terminated. Waiting to terminate...
+2026-01-05 23:00:47 | INFO     | ffmpeg process 21986 should have terminated with a return code of -9.
+2026-01-05 23:00:47 | ERROR    | Ignoring exception in command stop
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ishwarbhingaradiya/Desktop/Shlok/cogs/music_simple.py", line 514, in stop
+    await ctx.send(embed=embed, delete_after=5)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/context.py", line 1140, in send
+    response = await self.interaction.response.send_message(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/hybrid.py", line 463, in _invoke_with_namespace
+    value = await self._do_call(ctx, ctx.kwargs)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'stop' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/hybrid.py", line 463, in _invoke_with_namespace
+    value = await self._do_call(ctx, ctx.kwargs)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.ext.commands.errors.HybridCommandError: Hybrid command raised an error: Command 'stop' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-01-05 23:00:50 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457788424026194120/reactions/%F0%9F%94%8A/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:01:28 | ERROR    | Ignoring exception in command stop
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 858, in _do_call
+    return await self._callback(self.binding, interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ishwarbhingaradiya/Desktop/Shlok/cogs/music_simple.py", line 514, in stop
+    await ctx.send(embed=embed, delete_after=5)
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/context.py", line 1140, in send
+    response = await self.interaction.response.send_message(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/interactions.py", line 1051, in send_message
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/hybrid.py", line 463, in _invoke_with_namespace
+    value = await self._do_call(ctx, ctx.kwargs)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'stop' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/ext/commands/hybrid.py", line 463, in _invoke_with_namespace
+    value = await self._do_call(ctx, ctx.kwargs)  # type: ignore
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.ext.commands.errors.HybridCommandError: Hybrid command raised an error: Command 'stop' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-01-05 23:01:39 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 23:01:39 | INFO     | Connecting to voice...
+2026-01-05 23:01:39 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 23:01:40 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 23:01:40 | INFO     | Voice connection complete.
+2026-01-05 23:03:30 | ERROR    | Disconnected from voice... Reconnecting in 196.87s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+[tls @ 0x759064000] Error in the pull function.
+[tls @ 0x759064000] IO error: Connection reset by peer
+[https @ 0x758c48000] Will reconnect at 2523120 in 0 second(s), error=Connection reset by peer.
+[tls @ 0x7590645a0] Error in the pull function.
+[tls @ 0x7590645a0] IO error: Connection reset by peer
+[https @ 0x758c48000] Will reconnect at 3538928 in 0 second(s), error=Connection reset by peer.
+[opus @ 0x75899c700] Error parsing Opus packet header.
+2026-01-05 23:05:21 | INFO     | ffmpeg process 21987 successfully terminated with return code of 0.
+2026-01-05 23:05:48 | INFO     | ffmpeg process 22006 has not terminated. Waiting to terminate...
+2026-01-05 23:05:48 | INFO     | ffmpeg process 22006 should have terminated with a return code of -9.
+2026-01-05 23:06:21 | ERROR    | Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "ski[" is not found
+2026-01-05 23:06:25 | INFO     | ffmpeg process 22007 has not terminated. Waiting to terminate...
+2026-01-05 23:06:25 | INFO     | ffmpeg process 22007 should have terminated with a return code of -9.
+2026-01-05 23:06:27 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457789856519295016/reactions/%E2%8F%AD%EF%B8%8F/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:06:29 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457789856519295016/reactions/%E2%8F%B9%EF%B8%8F/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:06:31 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457789856519295016/reactions/%F0%9F%94%89/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:06:32 | WARNING  | We are being rate limited. PUT https://discord.com/api/v10/channels/1457345545189331007/messages/1457789856519295016/reactions/%F0%9F%94%8A/@me responded with 429. Retrying in 0.30 seconds.
+2026-01-05 23:06:47 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 23:06:47 | INFO     | Connecting to voice...
+2026-01-05 23:06:47 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 23:06:48 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 23:06:48 | INFO     | Voice connection complete.
+2026-01-05 23:07:13 | ERROR    | Disconnected from voice... Reconnecting in 219.77s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+[tls @ 0x806c029e0] Error in the pull function.
+[tls @ 0x806c029e0] IO error: Connection reset by peer
+[https @ 0x806c2ca00] Will reconnect at 1556480 in 0 second(s), error=Connection reset by peer.
+[tls @ 0x806c02f80] Error in the pull function.
+[tls @ 0x806c02f80] IO error: Connection reset by peer
+[https @ 0x806c2ca00] Will reconnect at 2490352 in 0 second(s), error=Connection reset by peer.
+[opus @ 0x807380700] Error parsing Opus packet header.
+2026-01-05 23:09:16 | INFO     | ffmpeg process 22009 successfully terminated with return code of 0.
+2026-01-05 23:09:42 | INFO     | ffmpeg process 22023 has not terminated. Waiting to terminate...
+2026-01-05 23:09:42 | INFO     | ffmpeg process 22023 should have terminated with a return code of -9.
+2026-01-05 23:10:53 | INFO     | The voice handshake is being terminated for Channel ID 1455544730564694135 (Guild ID 1455544725846102164)
+2026-01-05 23:10:53 | INFO     | Connecting to voice...
+2026-01-05 23:10:53 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-05 23:10:54 | INFO     | Voice handshake complete. Endpoint found: c-bom12-7c27b0a0.discord.media:2053
+2026-01-05 23:10:54 | INFO     | Voice connection complete.
+ith a return code of -9.
+2026-01-05 23:10:53 | ERROR    | Disconnected from voice... Reconnecting in 531.46s.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/voice_state.py", line 601, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/discord/gateway.py", line 1053, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006

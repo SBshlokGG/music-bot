@@ -1,0 +1,304 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║         🎵 SHLOK MUSIC BOT - PREMIUM EDITION - QUICK START GUIDE             ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+📋 TABLE OF CONTENTS:
+
+1. Installation & Setup
+2. Starting the Bot
+3. Available Commands
+4. Features Overview
+5. Configuration
+6. Troubleshooting
+7. Support
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1️⃣ INSTALLATION & SETUP
+
+Prerequisites:
+✓ Python 3.8+ installed
+✓ Discord bot token
+✓ FFmpeg installed
+✓ opus.dll or libopus.so
+
+Installation Steps:
+
+  1. Navigate to bot directory:
+     cd "/Users/ishwarbhingaradiya/Desktop/Shlok 2"
+
+  2. Install dependencies:
+     pip install -r requirements.txt
+
+  3. Set your bot token in config.py:
+     BOT_TOKEN = "YOUR_TOKEN_HERE"
+
+  4. Run the bot:
+     python3 run.py
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2️⃣ STARTING THE BOT
+
+Quick Start:
+  cd "/Users/ishwarbhingaradiya/Desktop/Shlok 2"
+  python3 run.py
+
+The bot will:
+  ✅ Load all 6 cogs
+  ✅ Sync 29+ commands
+  ✅ Connect to Discord
+  ✅ Start web server on port 3000
+  ✅ Enable 24/7 mode
+
+Expected Output:
+  ✅ Opus library loaded successfully
+  🌐 Web server running on port 3000
+  ✅ Music cog loaded
+  ✅ Utility cog loaded
+  ✅ Advanced cog loaded
+  ✅ Premium cog loaded
+  ✅ Discovery cog loaded
+  ✅ Admin cog loaded
+  ✅ Synced 29 slash commands globally
+  🎵 Shlok Music is online!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3️⃣ AVAILABLE COMMANDS
+
+MUSIC PLAYBACK:
+  /play <song>          - Play a song
+  /skip                 - Skip to next song
+  /pause                - Pause playback
+  /resume               - Resume playback
+  /stop                 - Stop and clear queue
+  /queue                - Show queue
+  /shuffle              - Shuffle queue
+  /loop <mode>          - Set loop (off/track/queue)
+
+AUDIO CUSTOMIZATION:
+  /preset list          - Show all presets
+  /preset apply <name>  - Apply audio preset
+  /preset reset         - Reset to default
+  /quality <mode>       - Set quality (high/normal/low)
+  /autodj               - Toggle auto-DJ
+  /audiostats           - Show audio stats
+
+PREMIUM FEATURES:
+  /profile [@user]      - View profile
+  /library              - View music library
+  /save                 - Save current song
+  /playlist list        - Show playlists
+  /playlist create      - Create playlist
+  /playlist add         - Add song to playlist
+  /achievements         - View achievements
+  /leaderboard          - View leaderboards
+
+DISCOVERY:
+  /search <query>       - Search music
+  /discover             - Music discovery
+  /recommend            - Get recommendations
+  /radio [seed]         - Start radio
+
+ADMIN (Requires Permissions):
+  /settings prefix      - Change prefix
+  /settings maxqueue    - Set queue limit
+  /dj volume            - Adjust volume (DJ)
+  /dj bass              - Adjust bass (DJ)
+  /dj move              - Move track (DJ)
+  /logs                 - View logs
+  /stats                - Server stats
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4️⃣ FEATURES OVERVIEW
+
+🎵 AUDIO FEATURES:
+  • 320kbps maximum bitrate
+  • 13 audio presets
+  • Real-time EQ
+  • Auto-DJ mode
+  • Quality modes (High/Normal/Low)
+  • 24/7 streaming
+
+👤 USER FEATURES:
+  • User profiles
+  • Music library
+  • Playlists (unlimited)
+  • Achievements
+  • Leaderboards
+  • Personal statistics
+
+🎨 UI FEATURES:
+  • 8 premium themes
+  • Beautiful embeds
+  • Custom colors
+  • Responsive design
+  • Theme-based embeds
+
+🔍 DISCOVERY FEATURES:
+  • Advanced search
+  • Smart recommendations
+  • Trending detection
+  • Radio stations
+  • Music discovery modes
+
+⚙️ ADMIN FEATURES:
+  • Server settings
+  • DJ controls
+  • Analytics
+  • Logging
+  • Customization
+
+💾 DATABASE FEATURES:
+  • User profiles
+  • Playlists
+  • Library
+  • Statistics
+  • Achievements
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5️⃣ CONFIGURATION
+
+Audio Settings (config.py):
+  • Default volume: 100%
+  • Max volume: 150%
+  • Default bitrate: 320kbps
+  • Sample rate: 48kHz
+  • Enable advanced filters: True
+  • Enable dynamic normalization: True
+
+Music Settings (config.py):
+  • Max queue size: 500 tracks
+  • Max playlist size: 100
+  • Auto-disconnect time: 300 seconds
+  • Stay connected 24/7: True
+  • Default search limit: 5
+
+Theme Customization:
+  Edit core/themes.py to customize themes
+  8 themes available:
+    - DARK (default)
+    - LIGHT
+    - NEON
+    - OCEAN
+    - SUNSET
+    - FOREST
+    - CYBERPUNK
+    - GALAXY
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6️⃣ TROUBLESHOOTING
+
+Issue: Bot not connecting
+Solution:
+  • Check bot token in config.py
+  • Verify Discord server permissions
+  • Check internet connection
+  • Try restarting: python3 run.py
+
+Issue: No audio
+Solution:
+  • Check FFmpeg installation
+  • Verify Opus codec
+  • Check volume settings
+  • Try different audio preset: /preset apply crystalclear
+
+Issue: Commands not working
+Solution:
+  • Check bot has necessary permissions
+  • Verify commands synced (should see 29 commands)
+  • Try using / for slash commands
+  • Restart bot: pkill -f "python3 run.py"
+
+Issue: Slow performance
+Solution:
+  • Reduce quality: /quality normal
+  • Clear queue: /stop
+  • Check Discord server status
+  • Restart bot
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7️⃣ SUPPORT & DOCUMENTATION
+
+Documentation Files:
+  • BOT_DOCUMENTATION.txt - Complete feature guide
+  • FINAL_SUMMARY.txt - Feature summary
+  • PREMIUM_FEATURES_COMPLETE.md - Advanced features
+  • ADVANCED_FEATURES_GUIDE.md - Audio optimization
+  • OPTIMIZATION_COMPLETE.txt - Quality improvements
+
+Common Recipes:
+
+Get Best Audio Quality:
+  1. /quality high (320kbps)
+  2. /preset apply crystalclear
+  3. /audiostats (verify settings)
+
+Start Music Discovery:
+  1. /discover (get recommendations)
+  2. /search <artist> (find artists)
+  3. /radio <seed> (start radio)
+
+Create Custom Playlist:
+  1. /playlist create "My Mix"
+  2. /play <song1>
+  3. /save (while playing)
+  4. /playlist add (to add to playlist)
+
+Setup for Server:
+  1. /settings prefix $ (change prefix)
+  2. /settings maxqueue 300 (limit queue)
+  3. /dj volume 100 (set default volume)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ QUICK TIPS:
+
+1. Use /preset apply studio for balanced sound
+2. Use /quality high for best audio
+3. Enable /autodj to never run out of music
+4. Check /profile to see your stats
+5. Create playlists with /playlist create
+6. Use /search to find specific songs
+7. Check /leaderboard to see top users
+8. Use /dj commands if you have DJ role
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 YOU'RE ALL SET!
+
+Your Shlok Music Bot is now:
+✅ Fully configured
+✅ Ready to use
+✅ Production-grade
+✅ Feature-rich
+✅ Professionally designed
+
+Start playing music with:
+  /play Your Favorite Song
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+For more information, check the documentation files in the bot directory.
+
+Enjoy your premium Discord music experience! 🎵
+
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,55 @@
+2026-01-06 11:37:49 | INFO     | 🚀 Starting Shlok Music Bot...
+2026-01-06 11:37:49 | INFO     | 🚀 Starting bot (attempt 1/10)...
+2026-01-06 11:37:50 | INFO     | logging in using static token
+2026-01-06 11:37:50 | INFO     | 🔧 Setting up Shlok Music Bot...
+2026-01-06 11:37:51 | INFO     | ✅ Music cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.music_simple
+2026-01-06 11:37:51 | INFO     | ✅ Utility cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.utility_new
+2026-01-06 11:37:51 | INFO     | ✅ Advanced cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.advanced
+2026-01-06 11:37:51 | INFO     | ✅ Premium cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.premium
+2026-01-06 11:37:51 | INFO     | ✅ Discovery cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.discovery
+2026-01-06 11:37:51 | INFO     | ✅ Admin cog loaded
+2026-01-06 11:37:51 | INFO     | ✅ Loaded: cogs.admin
+2026-01-06 11:37:51 | INFO     | ✅ Synced 29 slash commands globally
+2026-01-06 11:37:52 | INFO     | Shard ID None has connected to Gateway (Session ID: a65c0479d0d39452296b8eee72b697e6).
+2026-01-06 11:37:54 | INFO     | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-01-06 11:37:54 | INFO     | 🎵 Shlok Music is online!
+2026-01-06 11:37:54 | INFO     | 📊 Servers: 5
+2026-01-06 11:37:54 | INFO     | 👥 Users: 108
+2026-01-06 11:37:54 | INFO     | 🤖 Shlok's Music Bot#5200 (ID: 1097878151713017896)
+2026-01-06 11:37:54 | INFO     | 📡 Latency: 302ms
+2026-01-06 11:37:54 | INFO     | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-01-06 11:38:33 | INFO     | Connecting to voice...
+2026-01-06 11:38:33 | INFO     | Starting voice handshake... (connection attempt 1)
+2026-01-06 11:38:34 | INFO     | Voice handshake complete. Endpoint found: india10003.discord.media:443
+2026-01-06 11:38:34 | INFO     | Voice connection complete.
+2026-01-06 11:39:27 | INFO     | ffmpeg process 84603 has not terminated. Waiting to terminate...
+2026-01-06 11:39:27 | INFO     | ffmpeg process 84603 should have terminated with a return code of -9.
+[tls @ 0x9110029e0] Error in the pull function.
+[tls @ 0x9110029e0] IO error: Connection reset by peer
+[https @ 0x911068000] Will reconnect at 1048576 in 0 second(s), error=Connection reset by peer.
+2026-01-06 11:41:42 | WARNING  | Can't keep up, shard ID None websocket is 22.0s behind.
+2026-01-06 11:41:42 | INFO     | ffmpeg process 84609 has not terminated. Waiting to terminate...
+2026-01-06 11:41:42 | INFO     | ffmpeg process 84609 should have terminated with a return code of -9.
+2026-01-06 11:41:43 | INFO     | ffmpeg process 84747 has not terminated. Waiting to terminate...
+2026-01-06 11:41:43 | INFO     | ffmpeg process 84747 should have terminated with a return code of -9.
+2026-01-06 11:42:58 | INFO     | ffmpeg process 85902 has not terminated. Waiting to terminate...
+2026-01-06 11:42:58 | INFO     | ffmpeg process 85902 should have terminated with a return code of -9.
+2026-01-06 11:43:22 | INFO     | ffmpeg process 85903 has not terminated. Waiting to terminate...
+2026-01-06 11:43:22 | INFO     | ffmpeg process 85903 should have terminated with a return code of -9.
+[tls @ 0x92706c000] Error in the pull function.
+[tls @ 0x92706c000] IO error: Connection reset by peer
+[https @ 0x926c38000] Will reconnect at 2555888 in 0 second(s), error=Connection reset by peer.
+[tls @ 0x92706c5a0] Error in the pull function.
+[tls @ 0x92706c5a0] IO error: Connection reset by peer
+[https @ 0x926c38000] Will reconnect at 3882992 in 0 second(s), error=Connection reset by peer.
+[opus @ 0x927238700] Error parsing Opus packet header.
+2026-01-06 11:47:38 | INFO     | ffmpeg process 85947 successfully terminated with return code of 0.
+2026-01-06 12:24:47 | INFO     | ffmpeg process 86006 has not terminated. Waiting to terminate...
+2026-01-06 12:24:47 | INFO     | ffmpeg process 86006 should have terminated with a return code of -9.
+2026-01-06 12:25:49 | INFO     | ffmpeg process 86449 has not terminated. Waiting to terminate...
+2026-01-06 12:25:49 | INFO     | ffmpeg process 86449 should have terminated with a return code of -9.
