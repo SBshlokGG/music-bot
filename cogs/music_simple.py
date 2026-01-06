@@ -434,7 +434,15 @@ class MusicSimple(commands.Cog, name="Music"):
         
         if not ctx.voice_client:
             try:
-                await channel.connect(timeout=15.0, reconnect=True, self_deaf=True)
+                # Use shorter timeout on Replit (known to have network issues)
+                await channel.connect(timeout=5.0, reconnect=True, self_deaf=True)
+            except asyncio.TimeoutError:
+                embed = discord.Embed(
+                    description="⚠️ **Voice connection timeout!**\n\nThis may be a hosting limitation. Try a text-based command instead.",
+                    color=0xF39C12
+                )
+                await ctx.send(embed=embed, delete_after=10)
+                return False
             except Exception as e:
                 logger.error(f"Connect error: {e}")
                 embed = discord.Embed(description="❌ **Could not connect to voice!**", color=0xE74C3C)
