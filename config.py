@@ -11,9 +11,10 @@ from typing import Dict, List, Optional
 # 🔑 BOT CREDENTIALS
 # ═══════════════════════════════════════════════════════════════
 
-BOT_TOKEN = "MTA5Nzg3ODE1MTcxMzAxNzg5Ng.GM9qub.Z2q6G2Y3VO1ReTGHhFpDDwryRYh361FCHNOFMw"
-APPLICATION_ID = "1097878151713017896"
-PUBLIC_KEY = "f2c775c1330a7202c71f9ad691bee729da46aecf0d883291dc13dd9735293341"
+# Use environment variables for secrets (never hardcode in production!)
+BOT_TOKEN = os.getenv('BOT_TOKEN', '')
+APPLICATION_ID = os.getenv('APPLICATION_ID', '1097878151713017896')
+PUBLIC_KEY = os.getenv('PUBLIC_KEY', '')
 
 # ═══════════════════════════════════════════════════════════════
 # 🎨 BOT APPEARANCE
