@@ -13,6 +13,10 @@ import discord
 from discord import app_commands
 from discord.ext import commands, tasks
 import yt_dlp
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 import config
 
@@ -35,16 +39,13 @@ YTDL_OPTIONS = {
     'extract_flat': False,
     'cachedir': False,
     'geo_bypass': True,
-    'socket_timeout': 10,
-    'retries': 2,
-    'fragment_retries': 3,
-    'skip_unavailable_fragments': True,
-    'concurrent_fragment_downloads': 4,
+    'socket_timeout': 15,
+    'retries': 3,
 }
 
 FFMPEG_OPTIONS = {
-    'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -nostdin -thread_queue_size 16',
-    'options': '-vn -bufsize 512k -maxrate 320k -b:a 320k'
+    'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 10 -nostdin',
+    'options': '-vn'
 }
 
 ytdl = yt_dlp.YoutubeDL(YTDL_OPTIONS)
@@ -144,7 +145,6 @@ class MusicPlayer:
         self.volume = 0.5
         self.loop = False
         self.now_playing_msg: Optional[discord.Message] = None
-        self.queue_messages: dict[int, discord.Message] = {}  # Track queue messages by song index
     
     def _create_progress_bar(self, current: int, total: int, length: int = 12) -> str:
         """Create a visual progress bar"""
@@ -188,7 +188,7 @@ class MusicPlayer:
         
         if self.voice.is_playing():
             self.voice.stop()
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.5)
         
         self.current = song
         
@@ -215,7 +215,7 @@ class MusicPlayer:
     
     async def play_next(self):
         """Play next song from queue"""
-        await asyncio.sleep(0.1)
+        await asyncio.sleep(0.3)
         
         self.voice = self.guild.voice_client
         
@@ -231,21 +231,6 @@ class MusicPlayer:
             return
         
         if self.queue:
-            # Delete the queue message for the song being played
-            if 0 in self.queue_messages:
-                try:
-                    await self.queue_messages[0].delete()
-                except:
-                    pass
-                del self.queue_messages[0]
-            
-            # Reindex remaining queue messages
-            new_queue_messages = {}
-            for idx in sorted(self.queue_messages.keys()):
-                if idx > 0:
-                    new_queue_messages[idx - 1] = self.queue_messages[idx]
-            self.queue_messages = new_queue_messages
-            
             song = self.queue.pop(0)
             await self.play_song(song)
         else:
@@ -316,7 +301,7 @@ class MusicPlayer:
         for emoji in reactions:
             try:
                 await self.now_playing_msg.add_reaction(emoji)
-                await asyncio.sleep(0.05)
+                await asyncio.sleep(0.25)
             except:
                 pass
     
@@ -365,13 +350,6 @@ class MusicPlayer:
         self.queue.clear()
         self.current = None
         self.loop = False
-        # Clear all queue messages
-        for msg in self.queue_messages.values():
-            try:
-                asyncio.create_task(msg.delete())
-            except:
-                pass
-        self.queue_messages.clear()
         if self.voice and self.voice.is_playing():
             self.voice.stop()
 
@@ -391,9 +369,9 @@ class MusicSimple(commands.Cog, name="Music"):
     def cog_unload(self):
         self.voice_check.cancel()
     
-    @tasks.loop(seconds=30)
+    @tasks.loop(seconds=60)
     async def voice_check(self):
-        """Keep voice connections alive - optimized for low latency"""
+        """Keep voice connections alive"""
         for guild_id in list(self.players.keys()):
             try:
                 player = self.players[guild_id]
@@ -434,25 +412,11 @@ class MusicSimple(commands.Cog, name="Music"):
         
         if not ctx.voice_client:
             try:
-                # Send immediate response to avoid Discord interaction timeout
-                await ctx.defer()
-                
-                # Use shorter timeout on Replit (known to have network issues)
-                await channel.connect(timeout=2.0, reconnect=True, self_deaf=True)
-            except asyncio.TimeoutError:
-                try:
-                    await ctx.followup.send(
-                        "⚠️ **Voice connection timeout!**\n\nThis is a hosting limitation. Voice features may not work reliably on this platform."
-                    )
-                except:
-                    pass
-                return False
+                await channel.connect(timeout=30.0, reconnect=True, self_deaf=True)
             except Exception as e:
                 logger.error(f"Connect error: {e}")
-                try:
-                    await ctx.followup.send("❌ **Could not connect to voice!**")
-                except:
-                    pass
+                embed = discord.Embed(description="❌ **Could not connect to voice!**", color=0xE74C3C)
+                await ctx.send(embed=embed, delete_after=5)
                 return False
         elif ctx.voice_client.channel != channel:
             try:
@@ -501,13 +465,7 @@ class MusicSimple(commands.Cog, name="Music"):
                 embed.description += f"```yaml\nDuration: {song.duration_str}\n```"
                 if song.thumbnail:
                     embed.set_thumbnail(url=song.thumbnail)
-                
-                # Store the queue message instead of deleting it
-                queue_msg = await loading.edit(embed=embed)
-                player.queue_messages[len(player.queue) - 1] = queue_msg
-                
-                # Update the now playing embed to show updated queue
-                await player.update_now_playing()
+                await loading.edit(embed=embed, delete_after=10)
             else:
                 await loading.delete()
                 await player.play_song(song)
