@@ -9,6 +9,10 @@ import sys
 import os
 from datetime import datetime
 from aiohttp import web
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 import discord
 from discord.ext import commands, tasks
